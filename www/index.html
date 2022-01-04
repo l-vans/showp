@@ -1,0 +1,76 @@
+
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 
+		'self' data: gap: https://ssl.gstatic.com 
+		'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; 
+		img-src 'self' data: content:;"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+		
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+		<!-- <script type="text/javascript" 
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRFEzTcGbEDX5BsA78NkBcbaD9-LpW3lc"></script> -->
+		<script src="js/jquery-3.6.0.js"></script>
+	    <!-- <script src="js/jquery.geocoder.js"></script> -->
+        <!-- <script type="text/javascript" src="js/jquery.googlemap.js"></script> -->
+		<script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" charset="utf-8"></script>
+		<script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" charset="utf-8"></script>
+		<script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
+		<script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js" type="text/javascript" charset="utf-8"></script>
+        <!-- <link rel="stylesheet" href="css/index.css"> -->
+        <title>Showp</title>
+    </head>
+    <body>
+
+			<div id="firstPage">
+					<div id="location">
+						<form>
+							<button type="button" id="find_them">Find me</button>
+						</form>
+					</div>
+			</div>
+
+			<div id="searchPage">
+					<div id="search">
+						<form id="search_form">
+							<input type="text" id="product" name="product" size="21" maxlength="120" placeholder="Find product">
+							<button type="button" id="search_products">Search</button>
+						</form>
+					</div>
+			</div>
+
+			<div id="resultsPage">
+					<div id="mapContainer" style="height: 70vh; width: auto"></div>
+			</div>
+			<div id="panel"></div>
+
+	  <script src="cordova.js"></script>
+	  <script src="js/index.js"></script>
+	  
+    </body>
+	
+    
+</html>
